@@ -1,0 +1,266 @@
+#Write code for an adventure game with text only.
+#Inputs from user make sense, no matter where they put it.
+#Ask 20 questions
+#Make random number generator for and ask user to input the number they want
+#make story for it.
+import time
+import random
+print("Welcome to the oH10 based adventure game")
+time.sleep(2)
+
+print("The computer will ask you, 10 questions that will change the story.")
+time.sleep(2)
+
+print("If your ready let's Start!")
+time.sleep(2)
+
+
+#These will not be the 20 questions
+
+def ohio():
+    computer = random.randint(1, 2)
+    ohio = input("DO you want to live!?!?! ")
+    if computer == 1:
+        print("No? Great! You're living in oH10 now! :) ")
+    else:
+        print((ohio.capitalize()) + ", you're still living in oH10 You can never leave oH10 :):):):):):)")
+
+
+ohio()
+
+time.sleep(2)
+
+
+def story():
+    print("\nYou're a middle aged man with back problems.")
+    time.sleep(2)
+
+    print("\nYou sit and watch chinese cartoons in black and white all day.")
+    time.sleep(2)
+
+    print("\nSuddenly while in the middle of eating your 5th bowl of ice cream.")
+    time.sleep(2)
+
+    print("\nYou hear the Tsunami siren from the bottom of the mountain.")
+    time.sleep(2)
+
+    question_one = input("\nDo you wish to go down?")
+
+    if question_one == "yes" or "Yes":
+        print("\nYou start heading down the mountain.")
+    else:
+        print("\nYou die of starvation because you go no down mountain for ice cream.")
+        quit()
+
+    time.sleep(2)
+    print("\nYou eventually, get down to the bottom of the mountain.")
+
+    time.sleep(2)
+    print("\nOnce you get down there the tsunami sirens stop.\nYou decided you wanted to check out what happened.")
+
+    question_two = input("\nDo you go check the sirens?")
+
+    if question_two == "yes" or "Yes":
+
+        time.sleep(1)
+        print("\nYou start walking to go check the sirens")
+
+        time.sleep(2)
+        print("\nYou make it to the sirens you take the headphones,\nand then the ladder up.")
+
+        time.sleep(2)
+        print("\nYou've got your tools and all the stuff you need to fix it.")
+
+        time.sleep(2)
+        print("\nYou just finished fixing the siren and once you fix one all others start working.")
+
+        time.sleep(2)
+        print("\nYou say that's a bit weird but your not complaining less to fix.")
+
+        time.sleep(3)
+        print("\nYou start heading down but you see the tsunami.")
+
+        time.sleep(3)
+        print("\nQuickly going down you find a comically large stapler.")
+
+        time.sleep(3)
+        print("\nYou staple the siren to the ground so it doesn't fall down.")
+
+        time.sleep(3)
+        print("\nStaying up there for a while waiting for the tsunami to end.")
+
+        time.sleep(3)
+        print("\nThinking about what you want to eat while the tsunami passes.")
+
+        time.sleep(5)
+        print("\nYou head down and decide to get some food for yourself.")
+
+        questionThree = input("What do you want to get?")
+
+    def question_three():
+
+        if questionThree == "Tacobell" or "tacobell":
+            print("You decide on " + questionThree + " and you start walking to it")
+
+        elif question_three == "Mcdonalds" or 'mcdonalds':
+            print("You decide on Mcdonalds and you start walking to it")
+
+        elif question_three == "Burger King" or "burger king":
+            print("You decide on Burger King and you start walking to it")
+
+        else:
+            print("Sorry that's not edible.")
+
+            question_three()
+
+        print("\nOn your way to " + questionThree + " you encounter a wild Dust Storm!")
+
+        print("\nWild Dust storm attacks!")
+        print("\n(Pokemon Battle Theme Ensues!)")
+        print("\nDust storm chooses dust!")
+
+    question_three()
+
+    def question_four():
+        questionFour = input("\nDo you wish to run or attack?")
+
+        if questionFour != "run" or " Run":
+            print("\nChoices are as follows.")
+
+            questionFive = input("Sumo Tackle, Ice cream, \nComically large spoon and stapler(CLSaS), Roundhouse kick. ")
+
+            if questionFive == "Sumo Tackle":
+                print("You sumo the dust storm it's unsurprisingly ineffective(Sand Storm is dust type!)")
+                time.sleep(1)
+                print("Dust storm failed to use dust!")
+                question_four()
+
+            elif questionFive == "Ice cream":
+                print("You throw an empty tub of Ice cream! Also unsurprisingly ineffective!")
+                time.sleep(1)
+                print("Dust storm decide to skip their turn!")
+                question_four()
+
+            elif questionFive == "Roundhouse kick" or "roundhousekick":
+                print("You use Roundhouse kick! You pull your back before attacking")
+                time.sleep(1)
+                print("Thus tripping on air and falling into the shadow of the sun")
+                time.sleep(1)
+                print("Teleporting you into oH10.v2.1.4")
+
+            elif questionFive == "comically large spoon and stapler" or "CLSaS":
+                print("You use the comically large spoon and stapler! Dust loses -1hp")
+                time.sleep(1)
+                print("Dust uses suffocate! You suffocate due to lack of oxygen!")
+                time.sleep(1)
+                print("You died")
+                quit()
+
+            else:
+                print("Bro, what.....")
+                question_four()
+
+        else:
+            print("Bruh, Scared of a Dust Storm?")
+            question_four()
+
+
+    question_four()
+
+    print("\nAfter you got teleported to oH10.2.1.4 from pulling your back you awoke,")
+    time.sleep(1)
+    print("and started to slowly become more conscious.")
+    time.sleep(2)
+    print("\nObserving your surroundings you realized that you are in a cave.")
+    time.sleep(1)
+    print("you need to get out here but you don't know how")
+    time.sleep(2)
+    print("\nSearching around, you find some items that could.... potentially be used to escape.")
+
+
+    def question_six():
+
+
+        questionSix = input("Here are the items available. (pickaxe, chainsaw, some gas with a lighter and dynamite.)")
+
+        if questionSix == "pickaxe":
+            print("Brhuh")
+
+        elif questionSix == "chainsaw":
+            print("YOu stupid whats that gonna do?")
+
+        elif questionSix == "Gas and lighter":
+            print("Hey that's pretty gooooood")
+
+        elif questionSix == "Dynamite" or "dynamite":
+            print("\nYou use the dynamite on the rock wall in front of you hoping it doesn't collapse the cave")
+            time.sleep(2)
+            print("\nThe dynamite breaks the wall but the cave is starting collapse.")
+            time.sleep(1.5)
+            print("You take whatever is close to you that's useful, and you start sprinting to get out.")
+            print("\n")
+        else:
+            print("omg bruh you akshually returded.")
+
+
+    question_six()
+
+    print("You make it out, but your leg got hurt while doing it.")
+    time.sleep(2)
+    print("You sit down on a rock and spot a little town no further than a couple miles away.")
+    time.sleep(2)
+    print("After resting for a litlle while you start to head towards the town")
+    time.sleep(2)
+    print("Hoping that when you would arrive they would give you someplace to sleep as you're exhausted.")
+
+    print("\n\n30ish minutes later")
+    time.sleep(10)
+    print("\n\n")
+    print("You arrive at the town finally and you need to get\nsomethign to drink, the walk hurt the entire time because of your leg.")
+    time.sleep(2)
+
+    print("\nYou walk around to find some bar or store, somewhat limping from the pain\n and you spot this bar so you go inside.")
+    time.sleep(2)
+
+    print("\nThere aren't a lot of people but they all seem friendly\n so you ask one of them a question.")
+
+    questionSeven = input("\n(Your Question.): ")
+
+    print('\n"' + questionSeven + "?" + '"', "you say.\n")
+
+    print(questionSeven + "? " "They say, " + "HaHaHa come here friend let me get to know ya.")
+
+    print("\nLet me get a drink for ya, what do ya want? ")
+
+    questionEight = input("\nWhat do you want to drink?")
+
+    print('\n"' + questionEight + '"' + " They say to the bartender, well you heard him get him some " + questionEight + ".")
+
+    print("as the barkeep was looking behind the counter for " + questionEight)
+    print("A random bar fight breaks out")
+    print("Your newly found friend gets really pumped up and joins in the fight, ko'ing 20 peeps")
+    print("\nYou watch in horror as he knock outs the people.")
+    print("you say to yourself to never mess with this man, Pepsi man")
+    questionNine = input("\nDo you wish to join the fight before he slaps everybody to sleep?")
+
+    if questionNine == "yes" or "Yes":
+        print("You join in the fight")
+    else:
+        print("You wuss")
+        quit()
+
+
+    print("\nAfter a little while, people in town found out about the bar fight and everyone joined including the country")
+    print("Your friend knocks out the last guy at the bar. 72 hours after the bar fight started.")
+
+    questionTen = input("Do you you wish to go home?")
+
+    if questionTen == "Yes" or "yes":
+        print("\nYour friend says goodbye and thanks you for joining the fight.")
+        print("You wait as the nether portal appears and you walk inside and wake up only now realizing it was a dream.")
+    else:
+        print("\nYou and your friend decide to go to the next country over for the next bar fight.")
+        print("The end.")
+
+
+story()
